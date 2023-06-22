@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    
+    background: url(./bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+
+.container{
+    background-color: rgba(0, 0, 0, 0.822);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto 0;
+    border-radius: 10px;
+    padding: 1rem 1rem 0;
+    color: white;
+    
+}
+
+.container h1{
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+    padding: .5rem;
+    margin-top: 1.5rem;
+}
+
+.input-add{
+    padding: .4rem;
+    width: 100%;
+    max-width: 250px;
+    margin-left: 2rem;
+    border-radius: 5px;
+    padding-left: .5rem;
+    border: none;
+    font-weight: 600;
+    
+}
+
+.input-add::placeholder{
+    font-weight: 700;
+
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+button:hover{
+    background-color: #7c057c;
+    color: white;
+}
+
+.add-button{
+   width: 30px;
+   height: 30px;
+   border-radius: 30px;
+}
+
+.todo-list{
+    width: 100%;
+    padding: .7rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0 2rem;
+    border-top: 1px solid #fff;
+    
+}
+
+.todo-item{
+    padding: .4rem;
+    width: 100%;
+    
+    display: flex;
+    justify-content:center;
+    gap: .3rem;
+}
+
+.todo-item span{
+    flex: 1;
+    text-align: center;
+   
+}
+
+.finished{
+    background-color:#410241b2 ;
+    border-radius: 5px;
+    text-decoration: line-through;
+
+}
+
+.modal{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.918);
+    display: none;
+    align-items: center;
+    justify-content: center; 
+
+}
+
+.modal-box{
+    background-color: rgba(209, 208, 208, 0.918);
+    width: 100%;
+    max-width: 600px;
+    min-height: 200px;
+    transform: translate(0,-110%);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 5px;
+    gap: .5rem;
+}
+.modal-box h4{
+    color: #333;
+    margin-left: 10px;
+}
+
+.edit-form{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    padding: .5rem;
+       
+}
+
+.edit-form input{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: none;
+    padding: .3rem;
+}
+
+.edit-form button{
+    width: 100%;
+    max-width: 3rem;
+}
+
+.cancel-edit-btn{
+    margin-left: 10px;
+    border-radius: 0;
+    width: 6rem;
+    padding: .3rem;
+}
+
